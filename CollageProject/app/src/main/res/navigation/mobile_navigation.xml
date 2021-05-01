@@ -115,7 +115,7 @@
         tools:layout="@layout/fragment_routine_subject" />
     <fragment
         android:id="@+id/add_routinefragment"
-        android:name="com.example.collageproject.fragment.AddRoutine"
+        android:name="com.example.collageproject.adminfragments.AddRoutine"
         android:label="fragment_addRoutine"
         tools:layout="@layout/fragment_add_routine" />
     <fragment
@@ -125,12 +125,12 @@
         tools:layout="@layout/fragment_show_routine" />
     <fragment
         android:id="@+id/addGallerykFragment"
-        android:name="com.example.collageproject.fragment.AddGallerykFragment"
+        android:name="com.example.collageproject.adminfragments.AddGallerykFragment"
         android:label="fragment_add_galleryk"
         tools:layout="@layout/fragment_add_galleryk" />
     <fragment
         android:id="@+id/add_noticeFragment"
-        android:name="com.example.collageproject.AddNoticeFragment"
+        android:name="com.example.collageproject.adminfragments.AddNoticeFragment"
         android:label="fragment_add_notice"
         tools:layout="@layout/fragment_add_notice" />
     <fragment
@@ -155,7 +155,7 @@
         tools:layout="@layout/fragment_show_online_classes" />
     <fragment
         android:id="@+id/AddonlineClassesfragment"
-        android:name="com.example.collageproject.fragment.AddOnlineClasses"
+        android:name="com.example.collageproject.adminfragments.AddOnlineClasses"
         android:label="fragment_Add_onlineclass"
         tools:layout="@layout/fragment_add_routine" />
 </navigation>

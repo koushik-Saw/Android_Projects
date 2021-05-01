@@ -1,4 +1,4 @@
-package com.example.collageproject;
+package com.example.collageproject.adminfragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,6 +14,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import com.example.collageproject.R;
 import com.example.collageproject.models.Notice;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;

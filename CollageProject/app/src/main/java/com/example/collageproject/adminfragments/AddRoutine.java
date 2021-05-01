@@ -1,4 +1,4 @@
-package com.example.collageproject.fragment;
+package com.example.collageproject.adminfragments;
 
 import android.content.ContentResolver;
 import android.content.Intent;
