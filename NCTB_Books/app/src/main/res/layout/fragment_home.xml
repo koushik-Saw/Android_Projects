@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B8873"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".fragment.HomeFragment">
+
+<!--    <Button-->
+<!--        android:id="@+id/all_books"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/custom_button_2"-->
+<!--        android:text="All NCTB Books"-->
+<!--        android:textSize="20sp" />-->
+
+    <Button
+        android:id="@+id/onetoten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button_2"
+        android:text="one To Ten"
+        android:textSize="20sp" />
+
+<!--    <Button-->
+<!--        android:id="@+id/math_solution"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:background="@drawable/custom_button_2"-->
+<!--        android:text="Math Solution"-->
+<!--        android:textSize="20sp" />-->
+
+    <Button
+        android:id="@+id/learn_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button_2"
+        android:text="Math Solution"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

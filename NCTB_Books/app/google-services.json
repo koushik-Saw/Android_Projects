@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1012159306307",
+    "project_id": "nctbbooks-9662f",
+    "storage_bucket": "nctbbooks-9662f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012159306307:android:03cb927b1edb908e4992f6",
+        "android_client_info": {
+          "package_name": "com.example.nctb_books"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012159306307-auqi4v3qcp4cm8i4g8tb269o7dtpbpct.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG7TqzHnyOKb7ApKfxDKxELNyvTkKKhwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1012159306307-auqi4v3qcp4cm8i4g8tb269o7dtpbpct.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

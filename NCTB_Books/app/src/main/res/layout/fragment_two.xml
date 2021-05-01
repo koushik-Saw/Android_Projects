@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.TwoFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/firetoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#16988E" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/routine_recycleId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="#653D1A"
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+</LinearLayout>

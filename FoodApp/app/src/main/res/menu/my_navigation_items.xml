@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Profile"
+        android:id="@+id/item_profile"
+        />
+    <!--  <item android:title="Add Restuarent"
+          android:id="@+id/item_resturent"/>-->
+      <item
+          android:title="About"
+          android:id="@+id/item_about"/>
+
+      <item
+          android:title="Logout"
+          android:id="@+id/item_logout"/>
+      <!--  <item
+            android:title="Add item"
+            android:id="@+id/item_add"/> -->
+
+
+  </menu>

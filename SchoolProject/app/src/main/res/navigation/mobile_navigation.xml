@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/routineFragment"
+        android:name="com.example.schoolproject.fragment.RoutineFragment"
+        android:label="fragment_routine"
+        tools:layout="@layout/fragment_routine">
+        <action
+            android:id="@+id/action_routineFragment_to_routinesecFragment"
+            app:destination="@id/showroutsec" />
+    </fragment>
+    <fragment
+        android:id="@+id/showroutsec"
+        android:name="com.example.schoolproject.fragment.ShowRoutineSec"
+        android:label="fragment_showroutinesec"
+        tools:layout="@layout/fragment_show_routine_sec">
+
+        <action
+            android:id="@+id/action_routinesecFragment_to_routineInfoDetailsFragment"
+            app:destination="@id/routineInfoDetailsFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/noticeFragment"
+        android:name="com.example.schoolproject.fragment.NoticeFragment"
+        android:label="fragment_notice"
+        tools:layout="@layout/fragment_notice">
+        <action
+            android:id="@+id/action_noticeFragment_to_noticeDetailsFragment"
+            app:destination="@id/noticeDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onlineClassesFragment"
+        android:name="com.example.schoolproject.fragment.OnlineClassesFragment"
+        android:label="fragment_online_classes"
+        tools:layout="@layout/fragment_onlineclasees" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.schoolproject.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_routineFragment"
+            app:destination="@id/routineFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_noticeFragment"
+            app:destination="@id/noticeFragment" />
+        <action android:id="@+id/action_homeFragment_to_onlineFragment"
+            app:destination="@+id/onlineClassesFragment"
+            />
+        <action
+            android:id="@+id/action_homeFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.schoolproject.fragment.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery">
+        <action
+            android:id="@+id/action_galleryFragment_to_galleryInfoDetailsFragment"
+            app:destination="@id/galleryInfoDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_classesFragment"
+        android:name="com.example.schoolproject.fragment.Admin.Add_classesFragment"
+        android:label="fragment_add_classes"
+        tools:layout="@layout/fragment_add_classes" />
+    <fragment
+        android:id="@+id/addNoticeFragment"
+        android:name="com.example.schoolproject.fragment.Admin.AddNoticeFragment"
+        android:label="fragment_add_notice"
+        tools:layout="@layout/fragment_add_notice" />
+    <fragment
+        android:id="@+id/addRoutineFragment"
+        android:name="com.example.schoolproject.fragment.Admin.AddRoutineFragment"
+        android:label="fragment_add_routine"
+        tools:layout="@layout/fragment_add_routine">
+        <action
+            android:id="@+id/action_addRoutineFragment_to_routineFragment"
+            app:destination="@id/routineFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addGalleryImageFragment"
+        android:name="com.example.schoolproject.fragment.Admin.AddGalleryImageFragment"
+        android:label="fragment_add_gallery_image"
+        tools:layout="@layout/fragment_add_gallery_image">
+        <action
+            android:id="@+id/action_addGalleryImageFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminLoginFragment"
+        android:name="com.example.schoolproject.fragment.Admin.AdminLoginFragment"
+        android:label="fragment_admin_login"
+        tools:layout="@layout/fragment_admin_login">
+        <action
+            android:id="@+id/action_adminLoginFragment_to_adminDetailsFragment"
+            app:destination="@id/adminDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/galleryInfoDetailsFragment"
+        android:name="com.example.schoolproject.fragment.GalleryInfoDetailsFragment"
+        android:label="fragment_gallery_info_details"
+        tools:layout="@layout/fragment_gallery_info_details" />
+    <fragment
+        android:id="@+id/routineInfoDetailsFragment"
+        android:name="com.example.schoolproject.fragment.RoutineInfoDetailsFragment"
+        android:label="fragment_routine_info_details"
+        tools:layout="@layout/fragment_routine_info_details" />
+    <fragment
+        android:id="@+id/noticeDetailsFragment"
+        android:name="com.example.schoolproject.fragment.NoticeDetailsFragment"
+        android:label="fragment_notice_details"
+        tools:layout="@layout/fragment_notice_details" />
+    <fragment
+        android:id="@+id/adminDetailsFragment"
+        android:name="com.example.schoolproject.fragment.Admin.AdminDetailsFragment"
+        android:label="fragment_admin_details"
+        tools:layout="@layout/fragment_admin_details">
+        <action
+            android:id="@+id/action_adminDetailsFragment_to_addGalleryImageFragment"
+            app:destination="@id/addGalleryImageFragment" />
+        <action
+            android:id="@+id/action_adminDetailsFragment_to_addRoutineFragment"
+            app:destination="@id/addRoutineFragment" />
+        <action
+            android:id="@+id/action_adminDetailsFragment_to_addNoticeFragment"
+            app:destination="@id/addNoticeFragment" />
+        <action
+            android:id="@+id/action_adminDetailsFragment_to_add_classesFragment"
+            app:destination="@id/add_classesFragment" />
+        <action
+            android:id="@+id/action_adminDetailsFragment_to_addSectionFragment"
+            app:destination="@id/addSectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addSectionFragment"
+        android:name="com.example.schoolproject.fragment.Admin.AddSectionFragment"
+        android:label="fragment_add_section"
+        tools:layout="@layout/fragment_add_section" />
+</navigation>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".fragment.Admin.Add_classesFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:background="#0EB8AA" />
+
+    <Spinner
+        android:id="@+id/add_online_classes_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_online_classes_sec"
+        android:layout_marginTop="10dp"
+        android:hint="Section"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/add_online_class_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Subject"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/add_online_class_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Class Link"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/add_online_class_link_btnd"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="Add Class"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|bottom"
+    android:background="@drawable/foodwallpaper"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/googleBtnID"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstylepink"
+            android:text="Google"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/google_icon"
+            android:textAllCaps="false"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/facebookBtnID"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/facebook_btn"
+            android:drawableStart="@drawable/facebook_icon"
+            android:paddingLeft="20dp"
+            android:text="Facebook"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="------Or Use Your Phone------"
+        android:layout_marginTop="40dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/PhoneBtnID"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_round"
+        android:text="Sign Up Using Phone"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="#000000" />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".AddNoticeFragment">
+
+
+    <Spinner
+        android:id="@+id/addnoticeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginTop="20dp"
+        android:background="#CFCFCF"
+        android:paddingTop="8dp" />
+
+    <EditText
+        android:id="@+id/addnotice_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Notice Title" />
+
+    <EditText
+        android:id="@+id/addnotice_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Notice Body" />
+
+    <EditText
+        android:id="@+id/addnotice_dates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Notice Issue Date" />
+
+    <Button
+        android:id="@+id/addnoticesbtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="Add"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.collageproject.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_routineFragment"
+            app:destination="@id/routineFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_noticeFragment"
+            app:destination="@id/noticeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_onlineClassesFragment"
+            app:destination="@id/onlineClassesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_websiteFragment"
+            app:destination="@id/websiteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/routineFragment"
+        android:name="com.example.collageproject.fragment.RoutineFragment"
+        android:label="fragment_routine"
+        tools:layout="@layout/fragment_routine">
+        <action
+            android:id="@+id/action_routineFragment_to_routineDetailsFragment"
+            app:destination="@id/routineDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noticeFragment"
+        android:name="com.example.collageproject.fragment.NoticeFragment"
+        android:label="fragment_notice"
+        tools:layout="@layout/fragment_notice">
+        <action
+            android:id="@+id/action_noticeFragment_to_noticeDetailsFragment"
+            app:destination="@id/noticeDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onlineClassesFragment"
+        android:name="com.example.collageproject.fragment.OnlineClassesFragment"
+        android:label="fragment_online_classes"
+        tools:layout="@layout/fragment_online_classes">
+        <action
+            android:id="@+id/action_onlineClassesFragment_to_onlineClassesDetailsFragment"
+            app:destination="@id/onlineClassesDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.collageproject.fragment.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result">
+        <action
+            android:id="@+id/action_resultFragment_to_resultDetailsFragment"
+            app:destination="@id/resultDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.collageproject.fragment.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery">
+        <action
+            android:id="@+id/action_galleryFragment_to_galleryDetailsFragment"
+            app:destination="@id/galleryDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/galleryDetailsFragment"
+        android:name="com.example.collageproject.fragment.GalleryDetailsFragment"
+        android:label="fragment_gallery_details"
+        tools:layout="@layout/fragment_gallery_details" />
+    <fragment
+        android:id="@+id/noticeDetailsFragment"
+        android:name="com.example.collageproject.fragment.NoticeDetailsFragment"
+        android:label="fragment_notice_details"
+        tools:layout="@layout/fragment_notice_details" />
+    <fragment
+        android:id="@+id/routineDetailsFragment"
+        android:name="com.example.collageproject.fragment.RoutineFacultyFragment"
+        android:label="fragment_routine_details"
+        tools:layout="@layout/fragment_routine_details" />
+    <fragment
+        android:id="@+id/onlineClassesDetailsFragment"
+        android:name="com.example.collageproject.fragment.OnlineClassesDetailsFragment"
+        android:label="fragment_online_classes_details"
+        tools:layout="@layout/fragment_online_classes_details" />
+    <fragment
+        android:id="@+id/resultDetailsFragment"
+        android:name="com.example.collageproject.fragment.ResultDetailsFragment"
+        android:label="fragment_result_details"
+        tools:layout="@layout/fragment_result_details" />
+    <fragment
+        android:id="@+id/websiteFragment"
+        android:name="com.example.collageproject.fragment.WebsiteFragment"
+        android:label="fragment_website"
+        tools:layout="@layout/fragment_website" />
+    <fragment
+        android:id="@+id/routinedeptsFregment"
+        android:name="com.example.collageproject.fragment.RoutinedeptsFragment"
+        android:label="fragment_routinedept"
+        tools:layout="@layout/fragment_routinedepts" />
+    <fragment
+        android:id="@+id/routinesubjectfragment"
+        android:name="com.example.collageproject.fragment.RoutineSubjectFragment"
+        android:label="fragment_routinesub"
+        tools:layout="@layout/fragment_routine_subject" />
+    <fragment
+        android:id="@+id/add_routinefragment"
+        android:name="com.example.collageproject.fragment.AddRoutine"
+        android:label="fragment_addRoutine"
+        tools:layout="@layout/fragment_add_routine" />
+    <fragment
+        android:id="@+id/Show_routinefragment"
+        android:name="com.example.collageproject.fragment.ShowRoutine"
+        android:label="fragment_showRoutine"
+        tools:layout="@layout/fragment_show_routine" />
+    <fragment
+        android:id="@+id/addGallerykFragment"
+        android:name="com.example.collageproject.fragment.AddGallerykFragment"
+        android:label="fragment_add_galleryk"
+        tools:layout="@layout/fragment_add_galleryk" />
+    <fragment
+        android:id="@+id/add_noticeFragment"
+        android:name="com.example.collageproject.AddNoticeFragment"
+        android:label="fragment_add_notice"
+        tools:layout="@layout/fragment_add_notice" />
+    <fragment
+        android:id="@+id/onlineClassesDeptfragment"
+        android:name="com.example.collageproject.fragment.OnlineClassesDeptFragment"
+        android:label="fragment_onlineclassdept"
+        tools:layout="@layout/fragment_online_classes_dept" />
+    <fragment
+        android:id="@+id/onlineClassesFacultyfragment"
+        android:name="com.example.collageproject.fragment.OnlineClassesFacultyFragment"
+        android:label="fragment_onlineclassfaculty"
+        tools:layout="@layout/fragment_online_classes_faculty" />
+    <fragment
+        android:id="@+id/onlineClassesSubjectfragment"
+        android:name="com.example.collageproject.fragment.OnlineSubjectfragment"
+        android:label="fragment_onlineclasssubject"
+        tools:layout="@layout/fragment_online_subjectfragment" />
+    <fragment
+        android:id="@+id/onlineClassesShowfragment"
+        android:name="com.example.collageproject.fragment.ShowOnlineClasses"
+        android:label="fragment_Show_onlineclass"
+        tools:layout="@layout/fragment_show_online_classes" />
+    <fragment
+        android:id="@+id/AddonlineClassesfragment"
+        android:name="com.example.collageproject.fragment.AddOnlineClasses"
+        android:label="fragment_Add_onlineclass"
+        tools:layout="@layout/fragment_add_routine" />
+</navigation>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FoodApp</string>
+    <string name="splashScreenText">F o o d i k y</string>
+
+    <string name="facebook_app_id">722838441591366</string>
+    <string name="fb_login_protocol_scheme">fb722838441591366</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="restaurant_names">
+        <item>Green House</item>
+        <item>Sultan\'s Dine</item>
+        <item>The Dining Lounge</item>
+        <item>Pasta Club Wari</item>
+        <item>Kacchi Bhai</item>
+    </string-array>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:gravity="center|top"
+    tools:context=".Add_items">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:hint="Item name"
+        android:id="@+id/it_name"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/it_price"
+        android:textSize="26sp"
+        android:hint="Item Price"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/itemimage"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/profile_border" />
+
+    <Button
+        android:id="@+id/item_image_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_round"
+        android:text="Choose Image"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    <Spinner
+        android:id="@+id/restaurantNames"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/add_it"
+        android:text="add"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"
+        android:textSize="24sp"
+        />
+</LinearLayout>

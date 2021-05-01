@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_routine"
+            android:title="@string/menu_routine" />
+        <item
+            android:id="@+id/nav_notice"
+            android:title="@string/menu_notice" />
+        <item
+            android:id="@+id/nav_onlineClasses"
+            android:title="@string/menu_onlineClasses" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="@string/menu_gallery" />
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_adminLogin"
+            android:title="Admin Login" />
+    </group>
+
+</menu>

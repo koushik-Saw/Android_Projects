@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Adarsha College Dinajpur</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="menu_routine">Routine</string>
+    <string name="menu_notice">Notice</string>
+    <string name="menu_onlineClasses">Online Classes</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_home">Home</string>
+
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+
+    <string name="routine_text">Routine</string>
+    <string name="routine_text_details">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+
+    <string name="notice_text">Notice</string>
+
+    <string name="onlineClasses_text">Online Classes</string>
+    <string name="Classes_text">Classes</string>
+
+    <string name="gallery_text">Gallery</string>
+    <string name="administration_text">Administration</string>
+
+    <string name="result_text">Result</string>
+
+    <string name="Website_text">Website</string>
+
+
+
+    <string name="principal_name">DR. SAYED REDOWANUR RAHMAN</string>
+    <string name="principal_address">Adarsha Collage, Dinajpur</string>
+    <string name="principal">Principal</string>
+
+
+    <string name="vice_principal_name">HASINA AKTER BANU</string>
+    <string name="vice_principal_address">Adarsha Collage, Dinajpur</string>
+    <string name="vice_principal">Vice-Principal</string>
+</resources>

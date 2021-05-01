@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.example.nctb_books.fragment.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.nctb_books.fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.nctb_books.fragment.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.nctb_books.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_oneFragment"
+            app:destination="@id/oneFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_twoFragment"
+            app:destination="@id/twoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_threeFragment"
+            app:destination="@id/threeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_fourFragment"
+            app:destination="@id/fourFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/oneFragment"
+        android:name="com.example.nctb_books.fragment.OneFragment"
+        android:label="fragment_one"
+        tools:layout="@layout/fragment_one" />
+    <fragment
+        android:id="@+id/twoFragment"
+        android:name="com.example.nctb_books.fragment.TwoFragment"
+        android:label="fragment_two"
+        tools:layout="@layout/fragment_two" >
+        <action android:id="@+id/action_twofragment_to_fourfragment"
+            app:destination="@+id/fourFragment"
+            />
+
+    </fragment>
+    <fragment
+        android:id="@+id/threeFragment"
+        android:name="com.example.nctb_books.fragment.ThreeFragment"
+        android:label="fragment_three"
+        tools:layout="@layout/fragment_three" />
+    <fragment
+        android:id="@+id/fourFragment"
+        android:name="com.example.nctb_books.fragment.FourFragment"
+        android:label="fragment_four"
+        tools:layout="@layout/fragment_four" />
+</navigation>

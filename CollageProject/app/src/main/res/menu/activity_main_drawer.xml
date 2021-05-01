@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_routine"
+            android:title="@string/menu_routine" />
+        <item
+            android:id="@+id/nav_notice"
+            android:title="@string/menu_notice" />
+        <item
+            android:id="@+id/nav_onlineClasses"
+            android:title="@string/menu_onlineClasses" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="@string/menu_gallery" />
+
+
+
+        <item
+            android:id="@+id/nav_result"
+            android:title="@string/result_text" />
+
+        <item
+            android:id="@+id/nav_website"
+            android:title="@string/Website_text" />
+
+
+        <!--<item
+            android:id="@+id/nav_add_routine"
+            android:title="Add Routine" />
+        <item
+            android:id="@+id/nav_addNotice"
+            android:title="Add Notice" />
+        <item
+            android:id="@+id/nav_addOnlineclass"
+            android:title="Add Online classes" />
+        <item
+            android:id="@+id/nav_addgallery"
+            android:title="Add Gallery images" />-->
+    </group>
+
+
+</menu>

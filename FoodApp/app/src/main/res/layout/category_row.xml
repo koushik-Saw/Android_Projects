@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    app:cardElevation="3dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+
+            <ImageView
+                android:id="@+id/fav_image_border"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_favorite_border"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="60dp"/>
+
+            <ImageView
+                android:id="@+id/fav_image"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/ic_favorite"
+                android:padding="5dp"
+                android:layout_marginLeft="60dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/category_rowIV"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/chicken" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/category_rowTV"
+            android:text="Chicken"
+            android:gravity="center"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
