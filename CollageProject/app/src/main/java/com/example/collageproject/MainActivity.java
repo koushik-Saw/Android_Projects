@@ -91,7 +91,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Navigation.findNavController(this,
                     R.id.nav_host_fragment).navigate(R.id.addGallerykFragment);
         }*/
-
+        else if(item.getItemId()==R.id.nav_admin){
+            Navigation.findNavController(this,
+                    R.id.nav_host_fragment).navigate(R.id.adminLoginFragment);
+            getSupportActionBar().setTitle("Admin Panel");
+        }
         drawerLayout.close();
         return true;
     }

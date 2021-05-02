@@ -115,7 +115,7 @@
         tools:layout="@layout/fragment_routine_subject" />
     <fragment
         android:id="@+id/add_routinefragment"
-        android:name="com.example.collageproject.adminfragments.AddRoutine"
+        android:name="com.example.collageproject.fragment.adminfragments.AddRoutine"
         android:label="fragment_addRoutine"
         tools:layout="@layout/fragment_add_routine" />
     <fragment
@@ -125,12 +125,12 @@
         tools:layout="@layout/fragment_show_routine" />
     <fragment
         android:id="@+id/addGallerykFragment"
-        android:name="com.example.collageproject.adminfragments.AddGallerykFragment"
+        android:name="com.example.collageproject.fragment.adminfragments.AddGallerykFragment"
         android:label="fragment_add_galleryk"
         tools:layout="@layout/fragment_add_galleryk" />
     <fragment
         android:id="@+id/add_noticeFragment"
-        android:name="com.example.collageproject.adminfragments.AddNoticeFragment"
+        android:name="com.example.collageproject.fragment.adminfragments.AddNoticeFragment"
         android:label="fragment_add_notice"
         tools:layout="@layout/fragment_add_notice" />
     <fragment
@@ -155,7 +155,34 @@
         tools:layout="@layout/fragment_show_online_classes" />
     <fragment
         android:id="@+id/AddonlineClassesfragment"
-        android:name="com.example.collageproject.adminfragments.AddOnlineClasses"
+        android:name="com.example.collageproject.fragment.adminfragments.AddOnlineClasses"
         android:label="fragment_Add_onlineclass"
         tools:layout="@layout/fragment_add_routine" />
+    <fragment
+        android:id="@+id/adminLoginFragment"
+        android:name="com.example.collageproject.fragment.adminfragments.AdminLoginFragment"
+        android:label="fragment_admin_login"
+        tools:layout="@layout/fragment_admin_login">
+    </fragment>
+    <action
+        android:id="@+id/action_adminLoginFragment_to_adminDetailsFragment"
+        app:destination="@id/adminDetailsFragment" />
+    <fragment
+        android:id="@+id/adminDetailsFragment"
+        android:name="com.example.collageproject.fragment.adminfragments.AdminDetailsFragment"
+        android:label="fragment_admin_details"
+        tools:layout="@layout/fragment_admin_details">
+        <action
+            android:id="@+id/action_adminDetailsFragment_to_addGalleryImageFragment"
+            app:destination="@id/addGallerykFragment" />
+        <action
+            android:id="@+id/action_adminDetailsFragment_to_addRoutineFragment"
+            app:destination="@id/add_routinefragment" />
+        <action
+            android:id="@+id/action_adminDetailsFragment_to_addNoticeFragment"
+            app:destination="@id/add_noticeFragment" />
+        <action
+            android:id="@+id/action_adminDetailsFragment_to_add_classesFragment"
+            app:destination="@id/AddonlineClassesfragment" />
+    </fragment>
 </navigation>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B8873"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".fragment.adminfragments.AdminLoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#fff"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/login_email"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_email_32"
+            android:drawableLeft="@drawable/ic_email_32"
+            android:drawablePadding="15dp"
+            android:hint="Email"
+            android:inputType="text"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/login_password"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_outline_lock_24"
+            android:drawableLeft="@drawable/ic_outline_lock_24"
+            android:drawablePadding="15dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_show_pass"
+            android:layout_weight="1"
+            android:buttonTint="#fff"
+            android:text="Show Password"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login"
+            android:background="@drawable/custom_button"
+            android:text="Login"
+            android:textColor="#000"
+            android:textSize="24sp"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

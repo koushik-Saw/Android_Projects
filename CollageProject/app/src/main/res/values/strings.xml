@@ -39,4 +39,5 @@
     <string name="vice_principal_name">HASINA AKTER BANU</string>
     <string name="vice_principal_address">Adarsha Collage, Dinajpur</string>
     <string name="vice_principal">Vice-Principal</string>
+    <string name="admin_login">Admin Login</string>
 </resources>

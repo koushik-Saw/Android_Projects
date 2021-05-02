@@ -1,4 +1,4 @@
-package com.example.collageproject.adminfragments;
+package com.example.collageproject.fragment.adminfragments;
 
 import android.os.Bundle;
 
