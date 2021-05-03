@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Navigation.findNavController(this,
                     R.id.nav_host_fragment).navigate(R.id.galleryFragment);
            // getSupportActionBar().setTitle("Gallery");
+            
 
         } else if (item.getItemId() == R.id.nav_home) {
             Navigation.findNavController(this,
@@ -74,6 +75,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     R.id.nav_host_fragment).navigate(R.id.resultFragment);
         } else if (item.getItemId() == R.id.nav_website) {
            Navigation.findNavController(this, R.id.nav_host_fragment).navigate(R.id.websiteFragment);
+
 
             /*Intent intent = new Intent(MainActivity.this,Add.class);
             startActivity(intent);*/

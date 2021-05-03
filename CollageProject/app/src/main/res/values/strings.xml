@@ -30,7 +30,6 @@
     <string name="Website_text">Website</string>
 
 
-
     <string name="principal_name">DR. SAYED REDOWANUR RAHMAN</string>
     <string name="principal_address">Adarsha Collage, Dinajpur</string>
     <string name="principal">Principal</string>
@@ -40,4 +39,9 @@
     <string name="vice_principal_address">Adarsha Collage, Dinajpur</string>
     <string name="vice_principal">Vice-Principal</string>
     <string name="admin_login">Admin Login</string>
+
+    <string name="mujib_details">
+        মুজিববর্ষ’ হচ্ছে সর্বকালের শ্রেষ্ঠ বাঙালি জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমানের জন্মশতবার্ষিকী উৎসব। বঙ্গবন্ধুর জন্মের শত বছর উপলক্ষে ২০২০ খ্রিস্টাব্দের ১৭ মার্চ থেকে নানা কর্মসূচির মধ্য দিয়ে এ উৎসব উদযাপন চলছে।এছাড়া এ বছর ২৬ মার্চ বাংলাদেশের স্বাধীনতার সুবর্ণজয়ন্তী।
+	স্বাধীন বাংলাদেশের স্থপতি,ইতিহাসের মহানায়ক বঙ্গবন্ধু শেখ মুজিবুর রহমানের জন্মশতবার্ষিকী উৎসব এবং মহান স্বাধীনতার সুবর্ণজয়ন্তীকে স্মরণীয় করতে এই এ্যাপসটিকে উৎসর্গ করা হলো।
+    </string>
 </resources>

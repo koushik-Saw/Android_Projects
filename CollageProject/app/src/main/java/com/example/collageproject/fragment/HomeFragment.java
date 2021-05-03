@@ -26,7 +26,7 @@ import java.util.List;
 public class HomeFragment extends Fragment {
 
     private ImageSlider imageSlider;
-    private LinearLayout l1,l2,l3;
+    private LinearLayout l1,l2,l3,l4;
     private ImageView galleryIV;
     private Button btnRoutine,btnNotice,btnClasses;
 
@@ -41,6 +41,7 @@ public class HomeFragment extends Fragment {
         l1 = view.findViewById(R.id.home_routine);
         l2 = view.findViewById(R.id.home_notice);
         l3 = view.findViewById(R.id.home_online_classes);
+        l4 = view.findViewById(R.id.home_mujib);
         imageSlider =  view.findViewById(R.id.image_slider);
         galleryIV =  view.findViewById(R.id.galleryImgIV);
         btnRoutine =  view.findViewById(R.id.routineBtn);
@@ -72,6 +73,13 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Navigation.findNavController((Activity) getContext(),R.id.nav_host_fragment).navigate(R.id.action_homeFragment_to_onlineClassesFragment);
+            }
+        });
+        l4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(v).navigate(R.id.action_homeFragment_to_mujibDetailsFragment);
+
             }
         });
         galleryIV.setOnClickListener(new View.OnClickListener() {

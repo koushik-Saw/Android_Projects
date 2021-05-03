@@ -27,6 +27,9 @@
         <action
             android:id="@+id/action_homeFragment_to_websiteFragment"
             app:destination="@id/websiteFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mujibDetailsFragment"
+            app:destination="@id/mujibDetailsFragment" />
     </fragment>
     <fragment
         android:id="@+id/routineFragment"
@@ -185,4 +188,9 @@
             android:id="@+id/action_adminDetailsFragment_to_add_classesFragment"
             app:destination="@id/AddonlineClassesfragment" />
     </fragment>
+    <fragment
+        android:id="@+id/mujibDetailsFragment"
+        android:name="com.example.collageproject.fragment.MujibDetailsFragment"
+        android:label="fragment_mujib_details"
+        tools:layout="@layout/fragment_mujib_details" />
 </navigation>
