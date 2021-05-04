@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.example.safety.Fragment.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_authFragment"
+            app:destination="@id/authFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.example.safety.Fragment.AuthFragment"
+        android:label="fragment_auth"
+        tools:layout="@layout/fragment_auth" >
+        <action
+            android:id="@+id/action_authFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.safety.Fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_contactFragment"
+            app:destination="@id/contactFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_privacyFragment"
+            app:destination="@id/privacyFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_locationFragment"
+            app:destination="@id/locationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_fireServiceFragment"
+            app:destination="@id/fireServiceFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_hospitalFragment"
+            app:destination="@id/hospitalFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_policeStationFragment"
+            app:destination="@id/policeStationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.safety.Fragment.profileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.safety.Fragment.aboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.example.safety.Fragment.contactFragment"
+        android:label="fragment_contact"
+        tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/privacyFragment"
+        android:name="com.example.safety.Fragment.privacyFragment"
+        android:label="fragment_privacy"
+        tools:layout="@layout/fragment_privacy" />
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.example.safety.Fragment.locationFragment"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" />
+    <fragment
+        android:id="@+id/fireServiceFragment"
+        android:name="com.example.safety.Fragment.fireServiceFragment"
+        android:label="fragment_fire_service"
+        tools:layout="@layout/fragment_fire_service" />
+    <fragment
+        android:id="@+id/hospitalFragment"
+        android:name="com.example.safety.Fragment.hospitalFragment"
+        android:label="fragment_hospital"
+        tools:layout="@layout/fragment_hospital" />
+    <fragment
+        android:id="@+id/policeStationFragment"
+        android:name="com.example.safety.Fragment.policeStationFragment"
+        android:label="fragment_police_station"
+        tools:layout="@layout/fragment_police_station" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.safety.Fragment.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+</navigation>

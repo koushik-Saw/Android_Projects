@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Profile"
+        android:id="@+id/profileId"
+        android:icon="@drawable/person_24"/>
+
+
+
+    <item
+        android:title="Location"
+        android:id="@+id/locationId"
+        android:icon="@drawable/location_on_24"/>
+
+    <item android:title="Service">
+        <menu>
+            <item
+                android:id="@+id/aboutId"
+                android:title="About us"
+                android:icon="@drawable/about"/>
+        </menu>
+    </item>
+
+
+    <item android:title="Utility">
+        <menu>
+            <item
+                android:id="@+id/contactId"
+                android:title="Contact us"
+                android:icon="@drawable/contact_form"/>
+            <item
+                android:id="@+id/privacyPolicyId"
+                android:title="Privacy Policy"
+                android:icon="@drawable/insurance"/>
+            <item
+                android:id="@+id/logoutId"
+                android:title="Logout"
+                android:icon="@drawable/logout"/>
+        </menu>
+    </item>
+
+
+
+
+
+</menu>
