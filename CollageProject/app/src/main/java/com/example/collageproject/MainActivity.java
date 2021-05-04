@@ -63,9 +63,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         } else if (item.getItemId() == R.id.nav_gallery) {
             Navigation.findNavController(this,
-                    R.id.nav_host_fragment).navigate(R.id.galleryFragment);
+                    R.id.nav_host_fragment).navigate(R.id.action_homeFragment_to_galleryFragment);
            // getSupportActionBar().setTitle("Gallery");
-            
+
 
         } else if (item.getItemId() == R.id.nav_home) {
             Navigation.findNavController(this,
