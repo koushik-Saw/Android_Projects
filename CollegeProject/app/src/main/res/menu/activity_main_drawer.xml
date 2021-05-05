@@ -22,8 +22,6 @@
             android:id="@+id/nav_gallery"
             android:title="@string/menu_gallery" />
 
-
-
         <item
             android:id="@+id/nav_result"
             android:title="@string/result_text" />
@@ -31,22 +29,7 @@
         <item
             android:id="@+id/nav_website"
             android:title="@string/Website_text" />
-        <item
-            android:id="@+id/nav_admin"
-            android:title="@string/admin_login" />
 
-        <!--<item
-            android:id="@+id/nav_add_routine"
-            android:title="Add Routine" />
-        <item
-            android:id="@+id/nav_addNotice"
-            android:title="Add Notice" />
-        <item
-            android:id="@+id/nav_addOnlineclass"
-            android:title="Add Online classes" />
-        <item
-            android:id="@+id/nav_addgallery"
-            android:title="Add Gallery images" />-->
     </group>
 
 
