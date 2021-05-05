@@ -49,22 +49,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (item.getItemId() == R.id.nav_routine) {
             Navigation.findNavController(this,
                     R.id.nav_host_fragment).navigate(R.id.routineFragment);
-           // getSupportActionBar().setTitle("Routine");
+
 
         } else if (item.getItemId() == R.id.nav_notice) {
             Navigation.findNavController(this,
                     R.id.nav_host_fragment).navigate(R.id.noticeFragment);
-           // getSupportActionBar().setTitle("Notice");
+
 
         } else if (item.getItemId() == R.id.nav_onlineClasses) {
             Navigation.findNavController(this,
                     R.id.nav_host_fragment).navigate(R.id.onlineClassesFragment);
-           // getSupportActionBar().setTitle("Online Classes");
+
 
         } else if (item.getItemId() == R.id.nav_gallery) {
             Navigation.findNavController(this,
                     R.id.nav_host_fragment).navigate(R.id.action_homeFragment_to_galleryFragment);
-           // getSupportActionBar().setTitle("Gallery");
+
 
 
         } else if (item.getItemId() == R.id.nav_home) {
@@ -74,29 +74,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Navigation.findNavController(this,
                     R.id.nav_host_fragment).navigate(R.id.resultFragment);
         } else if (item.getItemId() == R.id.nav_website) {
-           Navigation.findNavController(this, R.id.nav_host_fragment).navigate(R.id.websiteFragment);
+            Navigation.findNavController(this, R.id.nav_host_fragment).navigate(R.id.websiteFragment);
 
 
-            /*Intent intent = new Intent(MainActivity.this,Add.class);
-            startActivity(intent);*/
-
-        }/*else if (item.getItemId() == R.id.nav_add_routine) {
-            Navigation.findNavController(this,
-                    R.id.nav_host_fragment).navigate(R.id.add_routinefragment);
-        } else if (item.getItemId() == R.id.nav_addNotice) {
-            Navigation.findNavController(this,
-                    R.id.nav_host_fragment).navigate(R.id.add_noticeFragment);
-        }else if (item.getItemId() == R.id.nav_addOnlineclass) {
-            Navigation.findNavController(this,
-                    R.id.nav_host_fragment).navigate(R.id.AddonlineClassesfragment);
-        }else if (item.getItemId() == R.id.nav_addgallery) {
-            Navigation.findNavController(this,
-                    R.id.nav_host_fragment).navigate(R.id.addGallerykFragment);
-        }*/
-        else if(item.getItemId()==R.id.nav_admin){
-            Navigation.findNavController(this,
-                    R.id.nav_host_fragment).navigate(R.id.adminLoginFragment);
-            getSupportActionBar().setTitle("Admin Panel");
         }
         drawerLayout.close();
         return true;
