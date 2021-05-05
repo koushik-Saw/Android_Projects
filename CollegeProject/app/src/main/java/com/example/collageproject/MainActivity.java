@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         actionBarDrawerToggle.setDrawerIndicatorEnabled(true);
         actionBarDrawerToggle.syncState();
 
-
     }
 
 
@@ -50,22 +49,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Navigation.findNavController(this,
                     R.id.nav_host_fragment).navigate(R.id.routineFragment);
 
-
         } else if (item.getItemId() == R.id.nav_notice) {
             Navigation.findNavController(this,
                     R.id.nav_host_fragment).navigate(R.id.noticeFragment);
-
 
         } else if (item.getItemId() == R.id.nav_onlineClasses) {
             Navigation.findNavController(this,
                     R.id.nav_host_fragment).navigate(R.id.onlineClassesFragment);
 
-
         } else if (item.getItemId() == R.id.nav_gallery) {
             Navigation.findNavController(this,
                     R.id.nav_host_fragment).navigate(R.id.action_homeFragment_to_galleryFragment);
-
-
 
         } else if (item.getItemId() == R.id.nav_home) {
             Navigation.findNavController(this,
@@ -75,8 +69,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     R.id.nav_host_fragment).navigate(R.id.resultFragment);
         } else if (item.getItemId() == R.id.nav_website) {
             Navigation.findNavController(this, R.id.nav_host_fragment).navigate(R.id.websiteFragment);
-
-
         }
         drawerLayout.close();
         return true;
