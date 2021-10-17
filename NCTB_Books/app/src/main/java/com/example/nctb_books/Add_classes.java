@@ -2,6 +2,7 @@ package com.example.nctb_books;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,6 +29,11 @@ public class Add_classes extends AppCompatActivity {
         addbt = findViewById(R.id.addbtn);
 
         databaseReference = FirebaseDatabase.getInstance().getReference("Classes");
+
+        SharedPreferences pref = getApplicationContext().getSharedPreferences("my peff",MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putString("Hellp","Heloo");
+        editor.commit();
 
         addbt.setOnClickListener(new View.OnClickListener() {
             @Override
