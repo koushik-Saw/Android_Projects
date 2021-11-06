@@ -1,5 +1,6 @@
 package com.example.foodapp.adepter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -63,7 +64,7 @@ public class CategoryAdepter extends RecyclerView.Adapter<CategoryAdepter.Catego
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final CategoryViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull final CategoryViewHolder holder, @SuppressLint("RecyclerView") int position) {
 
         databaseReference = FirebaseDatabase.getInstance().getReference("favorites");
 
