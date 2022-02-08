@@ -69,6 +69,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     R.id.nav_host_fragment).navigate(R.id.resultFragment);
         } else if (item.getItemId() == R.id.nav_website) {
             Navigation.findNavController(this, R.id.nav_host_fragment).navigate(R.id.websiteFragment);
+        }else if (item.getItemId() == R.id.nav_national_parliament) {
+            Navigation.findNavController(this, R.id.nav_host_fragment).navigate(R.id.nationalParliamentFragment);
+        }else if (item.getItemId() == R.id.nav_dinajpur) {
+            Navigation.findNavController(this, R.id.nav_host_fragment).navigate(R.id.dinajpurFragment);
+        }else if (item.getItemId() == R.id.nav_EPN) {
+            Navigation.findNavController(this, R.id.nav_host_fragment).navigate(R.id.emergencyPhoneFragment);
         }
         drawerLayout.close();
         return true;

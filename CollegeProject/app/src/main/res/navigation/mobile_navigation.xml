@@ -193,4 +193,19 @@
         android:name="com.example.collageproject.fragment.MujibDetailsFragment"
         android:label="fragment_mujib_details"
         tools:layout="@layout/fragment_mujib_details" />
+    <fragment
+        android:id="@+id/nationalParliamentFragment"
+        android:name="com.example.collageproject.fragment.nationalParliamentFragment"
+        android:label="fragment_national_parliament"
+        tools:layout="@layout/fragment_national_parliament" />
+    <fragment
+        android:id="@+id/dinajpurFragment"
+        android:name="com.example.collageproject.fragment.dinajpurFragment"
+        android:label="fragment_dinajpur"
+        tools:layout="@layout/fragment_dinajpur" />
+    <fragment
+        android:id="@+id/emergencyPhoneFragment"
+        android:name="com.example.collageproject.emergencyPhoneFragment"
+        android:label="fragment_emergency_phone"
+        tools:layout="@layout/fragment_emergency_phone" />
 </navigation>

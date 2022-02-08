@@ -30,6 +30,18 @@
             android:id="@+id/nav_website"
             android:title="@string/Website_text" />
 
+        <item
+            android:id="@+id/nav_national_parliament"
+            android:title="@string/national_parliament" />
+
+        <item
+            android:id="@+id/nav_dinajpur"
+            android:title="@string/about_dinajpur" />
+
+        <item
+            android:id="@+id/nav_EPN"
+            android:title="@string/emergency_phone_number" />
+
     </group>
 
 
