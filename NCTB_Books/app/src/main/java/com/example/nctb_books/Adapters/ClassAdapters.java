@@ -29,6 +29,7 @@ public class ClassAdapters extends RecyclerView.Adapter<ClassAdapters.myviewhold
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.simple_class_layout, parent, false);
         return new myviewholder(view, classlinstener);
     }
+
     @Override
     public void onBindViewHolder(@NonNull myviewholder holder, int position) {
         holder.classno.setText(list.get(position).getClasses());
@@ -43,6 +44,7 @@ public class ClassAdapters extends RecyclerView.Adapter<ClassAdapters.myviewhold
 
         onClasslinstener classlinstener;
         TextView classno;
+
         public myviewholder(@NonNull View itemView, onClasslinstener classlinstener) {
             super(itemView);
             this.classlinstener = classlinstener;
