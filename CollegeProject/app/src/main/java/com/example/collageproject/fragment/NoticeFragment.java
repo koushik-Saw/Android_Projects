@@ -48,7 +48,7 @@ public class NoticeFragment extends Fragment implements NoticeAdepter.onNoticeLi
         notices = new ArrayList<Notice>();
         recyclerView = view.findViewById(R.id.notice_recycleId);
         noticeAdapters = new NoticeAdepter(notices,this);
-
+        
         return view;
     }
 
