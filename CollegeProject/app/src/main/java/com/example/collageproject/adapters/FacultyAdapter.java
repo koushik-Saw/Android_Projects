@@ -19,7 +19,6 @@ public class FacultyAdapter extends RecyclerView.Adapter<FacultyAdapter.myviewho
 
     ArrayList<Courses> list;
     ArrayList<Courses> listFiltered;
-
     onFacultyListener facultyListener;
 
     public FacultyAdapter(ArrayList<Courses> list, onFacultyListener facultyListener) {
