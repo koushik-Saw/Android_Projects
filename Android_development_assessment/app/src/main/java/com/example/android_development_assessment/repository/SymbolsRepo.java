@@ -11,6 +11,9 @@ import com.example.android_development_assessment.api.RetrofitInstance;
 import com.example.android_development_assessment.model.SymbolsModel;
 import com.google.gson.JsonObject;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.util.List;
 
 import retrofit2.Call;
@@ -21,30 +24,34 @@ public class SymbolsRepo {
     private Context mContext;
     private MutableLiveData mutableLiveData;
 
-    private SymbolsModel symbolsList;
+    private SymbolsModel symbolsModel;
 
     public SymbolsRepo(Context context) {
         this.mContext = context;
     }
 
-    public MutableLiveData<SymbolsModel> getsymbols() {
+    public MutableLiveData<List<SymbolsModel.Symbols>> getsymbols() {
 
         try {
+            JSONObject symbolsObject = new JSONObject().getJSONObject("symbols");
+            JSONArray symbolsArray = symbolsObject.toJSONArray(symbolsObject.names());
             mutableLiveData = new MutableLiveData();
 
             ApiInterface apiServices = RetrofitInstance.getRetrofitInstance().create(ApiInterface.class);
-
             apiServices.getSymbolList().enqueue(new Callback<SymbolsModel>() {
                 @Override
                 public void onResponse(Call<SymbolsModel> call, Response<SymbolsModel> response) {
-                    String s = response.body().toString();
-                    System.out.println(s);
-                    Log.e("rankList", "onFailure: "+s);
+                    if(response.isSuccessful()){
+                        symbolsModel = response.body();
+
+                    }else {
+                        Log.e("failed", "onFailure: error" );
+                    }
                 }
 
                 @Override
                 public void onFailure(Call<SymbolsModel> call, Throwable t) {
-                    Log.e("rankList", "onFailure: "+t.getLocalizedMessage());
+                    Log.e("failed", "onFailure: "+t.getLocalizedMessage() );
                 }
             });
 

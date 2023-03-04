@@ -20,7 +20,7 @@ public class SymbolViewModel extends AndroidViewModel {
         symbolsRepo = new SymbolsRepo(application);
     }
 
-    public LiveData<SymbolsModel> getsymbols(){
+    public LiveData<List<SymbolsModel.Symbols>> getsymbols(){
         return symbolsRepo.getsymbols();
     }
 }

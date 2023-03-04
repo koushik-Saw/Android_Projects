@@ -1900,6 +1900,7 @@ public class SymbolsModel {
         public void setZwl(String zwl) {
             this.zwl = zwl;
         }
+
     }
 
 }

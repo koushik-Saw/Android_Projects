@@ -1,6 +1,9 @@
 package com.example.android_development_assessment.api;
 
+import android.util.Log;
+
 import java.io.*;
+import java.util.concurrent.TimeUnit;
 
 import okhttp3.*;
 import okhttp3.Request;
@@ -12,24 +15,22 @@ public class RetrofitInstance {
     final static String BASE_URL = "https://api.apilayer.com/exchangerates_data/";
 
 
-    /*public static OkHttpClient getRetrofitClient() throws IOException {
+    public static OkHttpClient getRetrofitClient(){
         OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
-
-        Request.Builder requestBuilder = new Request.Builder()
-                .addHeader("apikey", "etRvyJdLBoYUigEULDDDrPmVfcfq0V41");
-
-        Request request = requestBuilder.build();
+        httpClient.connectTimeout(1, TimeUnit.MINUTES);
+        httpClient.readTimeout(60,TimeUnit.SECONDS);
+        httpClient.writeTimeout(60,TimeUnit.SECONDS);
 
         OkHttpClient client = httpClient.build();
-        Response response = client.newCall(request).execute();
         return client;
-    }*/
+    }
 
     public static Retrofit getRetrofitInstance(){
         if (retrofit == null) {
             retrofit = new Retrofit.Builder()
                     .baseUrl(BASE_URL)
                     .addConverterFactory(GsonConverterFactory.create())
+                    .client(getRetrofitClient())
                     .build();
         }
         return retrofit;
